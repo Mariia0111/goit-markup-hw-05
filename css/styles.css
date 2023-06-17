@@ -817,7 +817,6 @@ img {
   color: rgba(46, 47, 66, 0.4);
   line-height: 1.17;
   letter-spacing: 0.04em;
-  color: var(--dark);
   padding: 8px 16px;
   margin-bottom: 16px;
   outline: transparent;
@@ -838,7 +837,7 @@ img {
   margin-bottom: 24px;
 }
 
-.check-span {
+.check-text span {
   display: inline-flex;
   width: 16px;
   height: 16px;
