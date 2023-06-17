@@ -802,7 +802,6 @@ img {
 }
 
 .modal-input:focus + .modal-icon {
-  stroke: var(--primary-brand);
   fill: var(--primary-brand);
 }
 
@@ -815,14 +814,14 @@ img {
   border-radius: 4px;
   font-weight: 400;
   font-size: 12px;
+  color: rgba(46, 47, 66, 0.4);
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: var(--dark);
-  padding-top: 8px;
-  padding-left: 16px;
-  padding-right: 7px;
+  padding: 8px 16px;
   margin-bottom: 16px;
   outline: transparent;
+  background-color: transparent;
   resize: none;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -835,6 +834,26 @@ img {
   border-color: var(--primary-brand);
 }
 
+.modal-check {
+  margin-bottom: 24px;
+}
+
+.check-span {
+  display: inline-flex;
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .check-text {
   font-weight: 400;
   font-size: 12px;
@@ -845,7 +864,7 @@ img {
   align-items: center;
 }
 
-.check-text span {
+/* .check-text span {
   width: 16px;
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
@@ -855,9 +874,9 @@ img {
   align-items: center;
   justify-content: center;
   fill: transparent;
-}
+} */
 
-.check-text a {
+.check-a {
   line-height: 1.33;
   text-decoration: underline;
   color: var(--primary-brand);
@@ -907,11 +926,13 @@ img {
 
 .modal-icon {
   fill: var(--dark);
-  stroke: var(--dark);
   position: absolute;
   left: 16px;
   top: 50%;
   transform: translateY(-50%);
-  transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-com {
+  margin-bottom: 16px;
 }
