@@ -607,6 +607,7 @@
             </li>
           </ul>
         </div>
+
         <div class="footer-subscribe">
           <p class="footer-subscribe-text">Subscribe</p>
           <form class="footer-form">
@@ -641,12 +642,13 @@
         <p class="modal-text">Leave your contacts and we will call you back</p>
         <form class="modal-form">
           <div class="modal-field">
-            <label class="modal-label">
+            <label for="user-name" class="modal-label">
               Name
               <div class="input-wrap">
                 <input
                   class="modal-input"
                   type="text"
+                  id="user-name"
                   name="user-name"
                   required
                 />
@@ -657,12 +659,13 @@
             </label>
           </div>
           <div class="modal-field">
-            <label class="modal-label">
+            <label for="user-phone" class="modal-label">
               Phone
               <div class="input-wrap">
                 <input
                   class="modal-input"
                   type="tel"
+                  id="user-phone"
                   name="user-phone"
                   required
                 />
@@ -673,12 +676,13 @@
             </label>
           </div>
           <div class="modal-field">
-            <label class="modal-label">
+            <label for="user-email" class="modal-label">
               Email
               <div class="input-wrap">
                 <input
                   class="modal-input"
                   type="email"
+                  id="user-email"
                   name="user-email"
                   required
                 />
@@ -689,11 +693,12 @@
             </label>
           </div>
           <div class="modal-com">
-            <label class="modal-label">
+            <label for="comment" class="modal-label">
               Comment
               <textarea
                 class="modal-textarea"
                 name="comment"
+                id="comment"
                 rows="5"
                 placeholder="Text input"
               ></textarea>
