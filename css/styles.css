@@ -851,10 +851,6 @@ img {
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.check-span:focus {
-  border-color: var(--pressed-state);
-}
-
 .check-text {
   font-weight: 400;
   font-size: 12px;
@@ -886,6 +882,10 @@ img {
   background-color: var(--pressed-state);
   border: none;
   fill: var(--light);
+}
+
+.input-checkbox:focus + .check-text span {
+  border-color: var(--pressed-state);
 }
 
 .modal-btn {
